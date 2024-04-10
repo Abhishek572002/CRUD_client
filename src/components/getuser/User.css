@@ -1,0 +1,74 @@
+.container {
+      max-width: 100%;
+      padding: 0 20px;
+      box-sizing: border-box;
+    }
+    
+    .userTable {
+      margin-top: 20px;
+    }
+    
+    .addButton {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+      text-align: center;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    
+    .addButton:hover {
+      background-color: #0056b3;
+    }
+    
+    .responsiveTable {
+      width: 100%;
+      border-collapse: collapse;
+      border: 1px solid #ddd;
+    }
+    
+    .responsiveTable th,
+    .responsiveTable td {
+      padding: 10px;
+      border: 1px solid #ddd;
+    }
+    
+    .responsiveTable th {
+      background-color: #f2f2f2;
+    }
+    
+    .responsiveTable td {
+      text-align: center;
+    }
+    
+    .actionButtons button {
+      margin-right: 5px;
+      background-color: #dc3545;
+      color: #fff;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+    .actionButtons button:hover {
+      background-color: #c82333;
+    }
+    
+    .actionButtons a {
+      margin-right: 5px;
+      text-decoration: none;
+      color: #007bff;
+    }
+    
+    @media screen and (max-width: 768px) {
+      .responsiveTable th,
+      .responsiveTable td {
+        padding: 5px;
+      }
+    }
+    
