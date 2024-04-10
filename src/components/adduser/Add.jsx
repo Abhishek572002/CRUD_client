@@ -25,7 +25,7 @@ const Add = () => {
 
       const submitForm = async(e) =>{
             e.preventDefault();
-            await axios.post("http://localhost:8000/api/create",user)
+            await axios.post("https://crud-server-one.vercel.app/api/create",user)
             .then((response)=>{
                   // console.log(response);
                   toast.success(response.data.msg, {position:"top-right"})
