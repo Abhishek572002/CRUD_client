@@ -76,7 +76,7 @@ const User = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('https://crud-server-one.vercel.app/api/getall');
+        const response = await axios.get('https://crud-server-e5da.onrender.com/api/getall');
         setUsers(response.data);
       } catch (error) {
         console.log(error);
@@ -87,7 +87,7 @@ const User = () => {
 
   const deleteUser = async (userId) => {
     try {
-      const response = await axios.delete(`https://crud-server-one.vercel.app/api/delete/${userId}`);
+      const response = await axios.delete(`https://crud-server-e5da.onrender.com/api/delete/${userId}`);
       setUsers((prevUsers) => prevUsers.filter((user) => user._id !== userId));
       toast.success(response.data.msg, { position: 'top-right' });
     } catch (error) {

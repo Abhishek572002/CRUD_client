@@ -23,7 +23,7 @@ const Edit = () => {
       }
 
       useEffect(()=>{
-            axios.get(`https://crud-server-one.vercel.app/api/getone/${id}`)
+            axios.get(`https://crud-server-e5da.onrender.com/api/getone/${id}`)
             .then((response)=>{
                   // console.log(response);
                   setUser(response.data)
@@ -34,7 +34,7 @@ const Edit = () => {
 
       const submitForm  = async(e)=>{ 
             e.preventDefault();
-            await axios.put(`https://crud-server-one.vercel.app/api/update/${id}`,user)
+            await axios.put(`https://crud-server-e5da.onrender.com/api/update/${id}`,user)
             .then((response)=>{
                   // console.log(response);
                   toast.success(response.data.msg, {position:"top-right"})
